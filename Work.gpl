@@ -1,0 +1,29 @@
+ #!/usr/bin/gnuplot
+ #
+ # Plot the energy per molecule value.
+ # by Asdrubal Lozada Blanco
+ # Laboratorio de Química Teórica - UFSCar
+ # 2015
+ reset
+ # color definitions
+ set style line 1 lc rgb "#000000" lt 1 lw 0.5
+ set style line 2 lc rgb "#949599" lt 1 lw 0.5
+ set multiplot layout 2,1
+ set ylabel "⟨E⟩ (kcal/mol)"
+ set xrange[0:10000] 
+ set tmargin 0.5
+ set bmargin 0 
+ set xtics format""
+ #
+ plot "energy.dat" u 1:2 w l ls 1 title "⟨E⟩"
+ #
+ set tmargin 0
+ set bmargin at screen 0.15
+ set ylabel "σ²(E) (kcal/mol)"
+ set xlabel "N•10³"
+ set xrange[0:10000] 
+ set xtics autofreq
+ set xtics format"%g"
+ #
+ plot "energy.dat" u 1:2 w l ls 2 title "σ²(E)"
+ unset multiplot

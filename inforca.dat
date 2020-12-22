@@ -1,0 +1,12 @@
+# Charge & multiplicity
+0 1
+# Total type components constrained
+0
+# Define type compontents constrained
+1 2 3
+# Define total site constrained 
+3 3 3
+# Constrained site
+1 2 3
+3 2 1
+2 1 3
