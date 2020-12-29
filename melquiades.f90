@@ -13,7 +13,7 @@
 ! Main program : MELQUIADES
 ! This program use the Metropolis Monte Carlo Algorithm
 ! for calculate of thermodynamical properties in system 
-! complexos or multicomponents and multiple potential types.
+! complex or multicomponents and multiple potential types.
 ! This program is stand-alone, except the use library xtc.
 ! Some interfaces call system have implemented with the ab initio
 ! program orca, the semiempirical program mopac and the plotting 
